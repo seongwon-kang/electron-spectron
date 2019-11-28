@@ -1,0 +1,25 @@
+{
+  "name": "electron-spectron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "electron": "^7.1.2"
+  },
+  "devDependencies": {
+    "spectron": "^9.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seongwon-kang/electron-spectron.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seongwon-kang/electron-spectron/issues"
+  },
+  "homepage": "https://github.com/seongwon-kang/electron-spectron#readme"
+}
