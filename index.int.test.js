@@ -1,8 +1,5 @@
-var Application = require("spectron").Application;
-
+const Application = require("spectron").Application;
 const binPath = "testBinary-win32-x64\\testBinary.exe";
-
-
 
 jest.setTimeout(30000);
 
@@ -15,12 +12,12 @@ async function createApp(app){
     return app;
 }
 
-
 describe("index.html", ()=> {
     var app;
 
     it("starts", async (done)=> {
         app = await createApp();
+        driver = await getWebdriver();
         console.log(app.running);
         expect(app.running).toBe(true);
         
@@ -45,7 +42,7 @@ describe("index.html", ()=> {
         expect(typeof title).toStrictEqual("string");
         done();
     });
-    
+
     it("stops", async (done)=> {
         console.log(app.running);
         expect(app.running).toBe(true);

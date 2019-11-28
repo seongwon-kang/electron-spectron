@@ -8,14 +8,16 @@
   },
   "devDependencies": {
     "electron": "^7.1.2",
+    "electron-chromedriver": "^7.0.0",
     "jest": "^24.9.0",
+    "selenium-webdriver": "^4.0.0-alpha.5",
     "spectron": "^9.0.0"
   },
   "scripts": {
     "start": "electron .",
     "test": "jest unit",
     "package": "electron-packager . testBinary --platform=win32 --arch=x64 --overwrite",
-    "test-int": "npm run package & jest int"
+    "test-int": "npm run package && jest int"
   },
   "repository": {
     "type": "git",
