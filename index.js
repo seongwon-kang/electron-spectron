@@ -1,5 +1,5 @@
 const {app, BrowserWindow} = require("electron");
-
+const getMenu = require("./menu/Menu");
 let win;
 
 function createWindow() {
@@ -11,6 +11,8 @@ function createWindow() {
         }
     });
     win.loadFile("index.html");
+    
+    getMenu();
 
     win.on("closed", ()=> {
         // window 객체에 대한 참조해제. 여러 개의 창을 지원하는 앱이라면 
