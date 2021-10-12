@@ -7,7 +7,7 @@
     "electron-packager": "^14.1.1"
   },
   "devDependencies": {
-    "electron": "^7.1.2",
+    "electron": "^11.5.0",
     "electron-chromedriver": "^7.0.0",
     "jest": "^24.9.0",
     "selenium-webdriver": "^4.0.0-alpha.5",
